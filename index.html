@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en dir=ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial scale-1">
+    <meta name="author" content="Sukhjinder Singh">
+    <meta name="description" content="Word rush">
+    <meta name="keywords" content="alphabets, game, word-rush, fast-typing game">
+    <title>Word rush</title>
+    <link rel="icon" href="./assets/media/icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+      <div class="game-container">
+        <h1>Word Rush</h1>
+          <div id="timer">Time Left: 15s</div>
+          <div id="score">Score: 0</div>
+          <div id="word-display">Press Start to Play!</div>
+          <input type="text" id="word-input" placeholder="Type here..." disabled>
+          <button id="start-btn">Start</button>
+          <button id="restart-btn" hidden>Restart</button>
+      </div>
+      <video autoplay muted loop id="background-video">
+        <source src="./assets/media/video.mp4" type="video/mp4">
+      </video>
+      <audio id="background-music" src="./assets/media/music.mp3" loop></audio>
+  </body>
+</html>

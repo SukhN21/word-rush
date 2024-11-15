@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1 {
+    color: #f2bb17;
+}
+
+.game-container {
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    height: 330px;
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 30px 30px 5px 5px;
+    box-shadow: rgb(40, 40, 41) 0px 20px 30px -10px;
+    background-image: linear-gradient(#8e8d8d, #403f3f);
+}
+
+#word-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+#word-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#f5f5dc, #bbbb60);
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+select:focus,
+button:focus,
+input:focus{
+    outline: 0;
+}
